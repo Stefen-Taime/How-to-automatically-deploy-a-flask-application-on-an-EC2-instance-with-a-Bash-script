@@ -6,3 +6,5 @@ The main motivation for this mini-project is to get familiar with using Bash Scr
 
 ![A high-level overview of the architecture](/assets/images/img.jpeg)
 
+
+Medium Post: https://medium.com/@stefentaime/how-to-automatically-deploy-a-flask-application-on-an-ec2-instance-with-a-bash-script-1e695204f1cc
