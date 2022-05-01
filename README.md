@@ -1,14 +1,8 @@
-# Bash Scripts to Automatically Spin Up an EC2 Instance
+# How-to-automatically-deploy-a-flask-application-on-an-EC2-instance-with-a-Bash-script
 
-The main motivation of this mini-project was to practice my Bash scripting
-skills and get familiar with using the AWS CLI to automate tasks on the command
-line. This particular repo has a setup script to automatically spin up an EC2
-instance, SSH into it, install dependencies, and host a simple Flask app using
-the image pulled from Docker Hub. At a high level, the process of this deployment
-is shown below:
 
-![A high-level overview of the architecture](/assets/images/infrastructure.png)
+The learning objectives:
+The main motivation for this mini-project is to get familiar with using Bash Scripting and the AWS CLI to automate command line tasks. This particular repo contains a configuration script that automatically creates an EC2 instance, accesses it via SSH, installs dependencies and hosts a simple Flask application using the image taken from Docker Hub.
 
-[Running on EC2!](http://ec2-54-169-122-216.ap-southeast-1.compute.amazonaws.com:5000) (powered down for now)
+![A high-level overview of the architecture](/assets/images/img.png)
 
-![Simple Flask app running on EC2](/assets/images/running_on_ec2.png)
