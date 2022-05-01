@@ -1,5 +1,4 @@
 #!/bin/bash
-# Author: Ismail Dawoodjee
 # This script tears down the infrastructure built from setup.sh. It:
 # - removes key-pair on local host
 # - removes key-pair stored on AWS
