@@ -1,5 +1,4 @@
 #!/bin/bash
-# Author: Ismail Dawoodjee
 # Bash script to update EC2, install and start Docker, pull image and run
 # the Flask container. Upon successful deployment, exit the VM.
 
