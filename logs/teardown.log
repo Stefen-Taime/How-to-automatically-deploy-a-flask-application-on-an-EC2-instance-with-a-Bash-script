@@ -1,0 +1,25 @@
+Tearing down local and cloud infrastructure 
+
+
+An error occurred (InvalidInstanceID.Malformed) when calling the TerminateInstances operation: Invalid id: "i-02d76bffb9ab8e7a8	i-00cad43e3de875575	i-0408b00c4f1064550	i-0aab0dbc375e6f419	i-0d03876883fe9aed0	i-0a9799e454eca6147	i-08c3931a395d1cb78	i-08b3ac8b8fff1f8f2"
+Tearing down local and cloud infrastructure 
+
+
+An error occurred (InvalidInstanceID.Malformed) when calling the TerminateInstances operation: Invalid id: "i-02d76bffb9ab8e7a8	i-00cad43e3de875575	i-0408b00c4f1064550	i-0aab0dbc375e6f419	i-0d03876883fe9aed0	i-0a9799e454eca6147	i-08c3931a395d1cb78	i-08b3ac8b8fff1f8f2"
+Tearing down local and cloud infrastructure 
+
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 32,
+                "Name": "shutting-down"
+            },
+            "InstanceId": "i-097390eb7769ac2d0",
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}

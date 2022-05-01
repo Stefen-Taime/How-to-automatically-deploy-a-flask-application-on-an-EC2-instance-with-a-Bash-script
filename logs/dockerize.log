@@ -1,0 +1,5 @@
+Started deployment at 2022-04-29 04:53:22  22 EDT 
+
+INFO: Updating EC2, installing Docker and starting it up 
+
+sudo: yum : commande introuvable

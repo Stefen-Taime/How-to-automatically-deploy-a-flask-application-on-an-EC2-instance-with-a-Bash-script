@@ -1,0 +1,2873 @@
+INFO: Started setup at 2022-04-29 05:00:21  21 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> ab705f712a50
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> 5c043b9da69b
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> e335e331f4ab
+Successfully built e335e331f4ab
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+18e0d2910dac: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+5e90a8fa1cc9: Layer already exists
+704d07eaecd4: Layer already exists
+18e0d2910dac: Layer already exists
+7cc0623bd7a8: Layer already exists
+28719f7d590d: Layer already exists
+fbd7d5451c69: Layer already exists
+6a35d52a66fd: Layer already exists
+f1859b30ca6b: Layer already exists
+4fc242d58285: Layer already exists
+ec2: digest: sha256:396ab8a045e9348f77596f238ce142bee7da682bae7a50553296275bd466170b size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+
+An error occurred (InvalidKeyPair.Duplicate) when calling the CreateKeyPair operation: The keypair 'docker-ec2' already exists.
+INFO: Started setup at 2022-04-29 05:02:33  33 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> ab705f712a50
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> 5c043b9da69b
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> e335e331f4ab
+Successfully built e335e331f4ab
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+18e0d2910dac: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+704d07eaecd4: Layer already exists
+28719f7d590d: Layer already exists
+18e0d2910dac: Layer already exists
+7cc0623bd7a8: Layer already exists
+5e90a8fa1cc9: Layer already exists
+f1859b30ca6b: Layer already exists
+6a35d52a66fd: Layer already exists
+fbd7d5451c69: Layer already exists
+4fc242d58285: Layer already exists
+ec2: digest: sha256:396ab8a045e9348f77596f238ce142bee7da682bae7a50553296275bd466170b size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+
+An error occurred (InvalidGroup.Duplicate) when calling the CreateSecurityGroup operation: The security group 'docker-ec2-sg' already exists for VPC 'vpc-19232963'
+INFO: Started setup at 2022-04-29 05:05:59  59 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> ab705f712a50
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> 5c043b9da69b
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> e335e331f4ab
+Successfully built e335e331f4ab
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+18e0d2910dac: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+18e0d2910dac: Layer already exists
+7cc0623bd7a8: Layer already exists
+704d07eaecd4: Layer already exists
+5e90a8fa1cc9: Layer already exists
+28719f7d590d: Layer already exists
+fbd7d5451c69: Layer already exists
+4fc242d58285: Layer already exists
+6a35d52a66fd: Layer already exists
+f1859b30ca6b: Layer already exists
+ec2: digest: sha256:396ab8a045e9348f77596f238ce142bee7da682bae7a50553296275bd466170b size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-0cf3630b61186e9df"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-04505e74c0741db8d",
+            "InstanceId": "i-0d03876883fe9aed0",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T21:06:08.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-31-201.ec2.internal",
+            "PrivateIpAddress": "172.31.31.201",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "cf30a361-8971-4b0a-9eb9-7f28182c8333",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T21:06:08.000Z",
+                        "AttachmentId": "eni-attach-049e72a03a99fbbe7",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-0cf3630b61186e9df"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:7b:e5:48:41:03",
+                    "NetworkInterfaceId": "eni-02f15f9d5655b3393",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-31-201.ec2.internal",
+                    "PrivateIpAddress": "172.31.31.201",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-31-201.ec2.internal",
+                            "PrivateIpAddress": "172.31.31.201"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-0cf3630b61186e9df"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-031c49d1259ba5c64"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 	ec2-54-167-79-58.compute-1.amazonaws.com: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 05:10:11  11 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> efb92e54a37d
+Step 6/7 : EXPOSE 5000
+ ---> Running in 444b211c6e18
+Removing intermediate container 444b211c6e18
+ ---> 36429c276c03
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Running in 1bd6bbecccd2
+Removing intermediate container 1bd6bbecccd2
+ ---> e091374baae3
+Successfully built e091374baae3
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+93c1dc4fa49a: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+7cc0623bd7a8: Layer already exists
+704d07eaecd4: Layer already exists
+5e90a8fa1cc9: Layer already exists
+28719f7d590d: Layer already exists
+f1859b30ca6b: Layer already exists
+fbd7d5451c69: Layer already exists
+4fc242d58285: Layer already exists
+6a35d52a66fd: Layer already exists
+93c1dc4fa49a: Pushed
+ec2: digest: sha256:408f7d240b868a8ecf85b8493c6220d410a4d5e737bca6f07c899e9408daa95b size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-08fcd6062536c0959"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-04505e74c0741db8d",
+            "InstanceId": "i-0aab0dbc375e6f419",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T21:10:24.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-24-65.ec2.internal",
+            "PrivateIpAddress": "172.31.24.65",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "9a534d66-75fa-4048-988a-fd91a514c975",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T21:10:24.000Z",
+                        "AttachmentId": "eni-attach-01308ad7a33462639",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-08fcd6062536c0959"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:e1:9b:ed:56:3b",
+                    "NetworkInterfaceId": "eni-0b5b524d1a84c720d",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-24-65.ec2.internal",
+                    "PrivateIpAddress": "172.31.24.65",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-24-65.ec2.internal",
+                            "PrivateIpAddress": "172.31.24.65"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-08fcd6062536c0959"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-099d8ce8c7c4e4447"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 		: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 05:17:47  47 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> 8928bd639a24
+Step 6/7 : EXPOSE 5000
+ ---> Running in 0f9a33bcba09
+Removing intermediate container 0f9a33bcba09
+ ---> 2a12b5947abc
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Running in e07d5e90096a
+Removing intermediate container e07d5e90096a
+ ---> 41d8fed4a7e5
+Successfully built 41d8fed4a7e5
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+63434427ce4d: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+704d07eaecd4: Layer already exists
+5e90a8fa1cc9: Layer already exists
+28719f7d590d: Layer already exists
+6a35d52a66fd: Layer already exists
+fbd7d5451c69: Layer already exists
+f1859b30ca6b: Layer already exists
+4fc242d58285: Layer already exists
+7cc0623bd7a8: Layer already exists
+63434427ce4d: Pushed
+ec2: digest: sha256:64a1eaab30c038e07ac08590a90b8ce5f71ade00ad4858ab640812947c9d7631 size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-056781212de26a7d0"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-0a9799e454eca6147",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T21:18:01.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-31-115.ec2.internal",
+            "PrivateIpAddress": "172.31.31.115",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "4a6f53c9-c58a-476c-8f56-8670b45921cb",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T21:18:01.000Z",
+                        "AttachmentId": "eni-attach-07113dac964e37ebb",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-056781212de26a7d0"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:34:5b:f8:06:7f",
+                    "NetworkInterfaceId": "eni-0d1a1cd1ef6a67831",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-31-115.ec2.internal",
+                    "PrivateIpAddress": "172.31.31.115",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-31-115.ec2.internal",
+                            "PrivateIpAddress": "172.31.31.115"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-056781212de26a7d0"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-08c17417f8540bac7"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 			ec2-3-88-2-97.compute-1.amazonaws.com: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 05:25:58  58 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> 0afcfe6a9708
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> 9ffb0d9f4504
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> 336024d4e9db
+Successfully built 336024d4e9db
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+30524bab09cb: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+5e90a8fa1cc9: Layer already exists
+28719f7d590d: Layer already exists
+7cc0623bd7a8: Layer already exists
+704d07eaecd4: Layer already exists
+30524bab09cb: Layer already exists
+f1859b30ca6b: Layer already exists
+6a35d52a66fd: Layer already exists
+4fc242d58285: Layer already exists
+fbd7d5451c69: Layer already exists
+ec2: digest: sha256:e419301ef34ddf2156d1a985acadd402389f8c091bd4e3612fcd49e55342cb4e size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+
+An error occurred (InvalidGroup.Duplicate) when calling the CreateSecurityGroup operation: The security group 'docker-ec2-sg' already exists for VPC 'vpc-19232963'
+INFO: Started setup at 2022-04-29 05:26:40  40 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> 0afcfe6a9708
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> 9ffb0d9f4504
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> 336024d4e9db
+Successfully built 336024d4e9db
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+30524bab09cb: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+28719f7d590d: Layer already exists
+5e90a8fa1cc9: Layer already exists
+7cc0623bd7a8: Layer already exists
+704d07eaecd4: Layer already exists
+30524bab09cb: Layer already exists
+fbd7d5451c69: Layer already exists
+6a35d52a66fd: Layer already exists
+f1859b30ca6b: Layer already exists
+4fc242d58285: Layer already exists
+ec2: digest: sha256:e419301ef34ddf2156d1a985acadd402389f8c091bd4e3612fcd49e55342cb4e size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-024bcb64a1bdc347b"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-08c3931a395d1cb78",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T21:26:49.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-22-157.ec2.internal",
+            "PrivateIpAddress": "172.31.22.157",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "4f692e76-877a-4d5e-ae68-d6b3b420ed58",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T21:26:49.000Z",
+                        "AttachmentId": "eni-attach-0d9b698b8c5d05581",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-024bcb64a1bdc347b"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:3f:0c:83:44:ed",
+                    "NetworkInterfaceId": "eni-08e505be284d92e11",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-22-157.ec2.internal",
+                    "PrivateIpAddress": "172.31.22.157",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-22-157.ec2.internal",
+                            "PrivateIpAddress": "172.31.22.157"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-024bcb64a1bdc347b"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-05abd1cfe9df64252"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 				ec2-3-80-22-50.compute-1.amazonaws.com: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 05:35:55  55 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> ff4fe54146f4
+Step 6/7 : EXPOSE 5000
+ ---> Running in 4117042ff739
+Removing intermediate container 4117042ff739
+ ---> da4635f2c605
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Running in 568ef49d71c3
+Removing intermediate container 568ef49d71c3
+ ---> b7ccca272970
+Successfully built b7ccca272970
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+7f33d1a925d6: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+28719f7d590d: Layer already exists
+704d07eaecd4: Layer already exists
+5e90a8fa1cc9: Layer already exists
+7cc0623bd7a8: Layer already exists
+f1859b30ca6b: Layer already exists
+6a35d52a66fd: Layer already exists
+4fc242d58285: Layer already exists
+fbd7d5451c69: Layer already exists
+7f33d1a925d6: Pushed
+ec2: digest: sha256:282ce89ade69e17b784fd25c73d18fbf63adc1d02e30448c32b15b41deff6c6a size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+
+An error occurred (InvalidGroup.Duplicate) when calling the CreateSecurityGroup operation: The security group 'docker-ec2-sg' already exists for VPC 'vpc-19232963'
+INFO: Started setup at 2022-04-29 05:39:55  55 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> ff4fe54146f4
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> da4635f2c605
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> b7ccca272970
+Successfully built b7ccca272970
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+7f33d1a925d6: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+704d07eaecd4: Layer already exists
+5e90a8fa1cc9: Layer already exists
+7f33d1a925d6: Layer already exists
+7cc0623bd7a8: Layer already exists
+28719f7d590d: Layer already exists
+6a35d52a66fd: Layer already exists
+f1859b30ca6b: Layer already exists
+4fc242d58285: Layer already exists
+fbd7d5451c69: Layer already exists
+ec2: digest: sha256:282ce89ade69e17b784fd25c73d18fbf63adc1d02e30448c32b15b41deff6c6a size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+
+An error occurred (InvalidKeyPair.Duplicate) when calling the CreateKeyPair operation: The keypair 'docker-ec2' already exists.
+INFO: Started setup at 2022-04-29 05:40:22  22 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> ff4fe54146f4
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> da4635f2c605
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> b7ccca272970
+Successfully built b7ccca272970
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+7f33d1a925d6: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+28719f7d590d: Layer already exists
+7f33d1a925d6: Layer already exists
+7cc0623bd7a8: Layer already exists
+704d07eaecd4: Layer already exists
+5e90a8fa1cc9: Layer already exists
+f1859b30ca6b: Layer already exists
+6a35d52a66fd: Layer already exists
+4fc242d58285: Layer already exists
+fbd7d5451c69: Layer already exists
+ec2: digest: sha256:282ce89ade69e17b784fd25c73d18fbf63adc1d02e30448c32b15b41deff6c6a size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-0cfbcb5fb6622d97f"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-02d76bffb9ab8e7a8",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T21:40:31.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1c",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-8-233.ec2.internal",
+            "PrivateIpAddress": "172.31.8.233",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-fcd8269a",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "e337e2b7-e11d-45dc-891b-586ca650588f",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T21:40:31.000Z",
+                        "AttachmentId": "eni-attach-012574c7613d6f3db",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-0cfbcb5fb6622d97f"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "02:e3:84:d5:98:31",
+                    "NetworkInterfaceId": "eni-05ca0d73b922a7a96",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-8-233.ec2.internal",
+                    "PrivateIpAddress": "172.31.8.233",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-8-233.ec2.internal",
+                            "PrivateIpAddress": "172.31.8.233"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-fcd8269a",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-0cfbcb5fb6622d97f"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-0c8b983ed77e79ee2"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname ec2-3-236-42-72.compute-1.amazonaws.com					: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 05:43:21  21 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> cc380f689406
+Step 6/7 : EXPOSE 5000
+ ---> Running in 814c160698f8
+Removing intermediate container 814c160698f8
+ ---> e7989dc4504a
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Running in 4d0973a38706
+Removing intermediate container 4d0973a38706
+ ---> 7ecb5fd3ea59
+Successfully built 7ecb5fd3ea59
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+388f526a6923: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+7cc0623bd7a8: Layer already exists
+28719f7d590d: Layer already exists
+5e90a8fa1cc9: Layer already exists
+704d07eaecd4: Layer already exists
+f1859b30ca6b: Layer already exists
+6a35d52a66fd: Layer already exists
+fbd7d5451c69: Layer already exists
+4fc242d58285: Layer already exists
+388f526a6923: Pushed
+ec2: digest: sha256:f5bcb7c57ac7d4cf0fa74c11c8165ed606568f74dd39b8b86eedcc2f0804e8b6 size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-043a47808dd6b2ac6"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-00cad43e3de875575",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T21:43:34.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1c",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-15-167.ec2.internal",
+            "PrivateIpAddress": "172.31.15.167",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-fcd8269a",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "b9dbed57-964a-4754-bb23-f342c8ee0fc9",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T21:43:34.000Z",
+                        "AttachmentId": "eni-attach-0bc09a19d8398c1b3",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-043a47808dd6b2ac6"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "02:e5:48:00:cb:31",
+                    "NetworkInterfaceId": "eni-00bc16d16b17b601d",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-15-167.ec2.internal",
+                    "PrivateIpAddress": "172.31.15.167",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-15-167.ec2.internal",
+                            "PrivateIpAddress": "172.31.15.167"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-fcd8269a",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-043a47808dd6b2ac6"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-003c83c8f9eeff49e"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 	ec2-44-198-57-13.compute-1.amazonaws.com					: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 05:51:47  47 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  137.2kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> b38d7621da83
+Step 6/7 : EXPOSE 5000
+ ---> Running in 6c02771a7e49
+Removing intermediate container 6c02771a7e49
+ ---> 3fd3e261c7e3
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Running in 5fd1d9472f78
+Removing intermediate container 5fd1d9472f78
+ ---> 8fe9516e06cb
+Successfully built 8fe9516e06cb
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+0673e76e8b3f: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+7cc0623bd7a8: Layer already exists
+704d07eaecd4: Layer already exists
+28719f7d590d: Layer already exists
+5e90a8fa1cc9: Layer already exists
+4fc242d58285: Layer already exists
+fbd7d5451c69: Layer already exists
+6a35d52a66fd: Layer already exists
+f1859b30ca6b: Layer already exists
+0673e76e8b3f: Pushed
+ec2: digest: sha256:9e10dae5effaf49a603958d4ffe32f6517b6e4902a5be718e27d358d25936986 size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-0576f7b31781a2189"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-08b3ac8b8fff1f8f2",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T21:52:00.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-17-213.ec2.internal",
+            "PrivateIpAddress": "172.31.17.213",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "9b684f52-6042-4c9d-b77d-bcf0cb7a827b",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T21:52:00.000Z",
+                        "AttachmentId": "eni-attach-00f328b2971e4a16c",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-0576f7b31781a2189"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:98:df:16:60:0f",
+                    "NetworkInterfaceId": "eni-0fdca37024d74be0c",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-17-213.ec2.internal",
+                    "PrivateIpAddress": "172.31.17.213",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-17-213.ec2.internal",
+                            "PrivateIpAddress": "172.31.17.213"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-0576f7b31781a2189"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-0e412b9e398d99c56"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 							ec2-3-89-29-99.compute-1.amazonaws.com: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 06:12:22  22 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> 9509a1e8aa1f
+Step 6/7 : EXPOSE 5000
+ ---> Running in c90c9c009944
+Removing intermediate container c90c9c009944
+ ---> f5323790c069
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Running in 2726d336c74f
+Removing intermediate container 2726d336c74f
+ ---> 3a170655900d
+Successfully built 3a170655900d
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+f23f4301bf58: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+4fc242d58285: Waiting
+fbd7d5451c69: Waiting
+5e90a8fa1cc9: Layer already exists
+28719f7d590d: Layer already exists
+7cc0623bd7a8: Layer already exists
+704d07eaecd4: Layer already exists
+f1859b30ca6b: Layer already exists
+6a35d52a66fd: Layer already exists
+fbd7d5451c69: Layer already exists
+4fc242d58285: Layer already exists
+f23f4301bf58: Pushed
+ec2: digest: sha256:08769b09c15e42f150876168039229abc97a18e9294ed8089e5379c947488894 size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-0d642ab9b028759dc"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-0b29fa7dba6f644fa",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T22:12:35.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-27-148.ec2.internal",
+            "PrivateIpAddress": "172.31.27.148",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "2990f20e-2599-4ddb-a098-abfdf6b71658",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T22:12:35.000Z",
+                        "AttachmentId": "eni-attach-078c99c4806b3bfbb",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-0d642ab9b028759dc"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:b9:90:2e:b3:97",
+                    "NetworkInterfaceId": "eni-0a6cc094db07ade32",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-27-148.ec2.internal",
+                    "PrivateIpAddress": "172.31.27.148",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-27-148.ec2.internal",
+                            "PrivateIpAddress": "172.31.27.148"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-0d642ab9b028759dc"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-05c31482c1534f594"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 						ec2-54-83-110-46.compute-1.amazonaws.com: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 06:23:44  44 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> 9509a1e8aa1f
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> f5323790c069
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> 3a170655900d
+Successfully built 3a170655900d
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+f23f4301bf58: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+5e90a8fa1cc9: Layer already exists
+f23f4301bf58: Layer already exists
+7cc0623bd7a8: Layer already exists
+704d07eaecd4: Layer already exists
+28719f7d590d: Layer already exists
+f1859b30ca6b: Layer already exists
+6a35d52a66fd: Layer already exists
+fbd7d5451c69: Layer already exists
+4fc242d58285: Layer already exists
+ec2: digest: sha256:08769b09c15e42f150876168039229abc97a18e9294ed8089e5379c947488894 size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-0bd53e39fafc00dcb"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-0a4a6dfd79bfc22e6",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T22:23:56.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-31-33.ec2.internal",
+            "PrivateIpAddress": "172.31.31.33",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "b8f6e885-14ff-4564-a590-c6fbd5ad96ac",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T22:23:56.000Z",
+                        "AttachmentId": "eni-attach-0bcffb771a0f6d47b",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-0bd53e39fafc00dcb"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:b3:ee:b2:ad:85",
+                    "NetworkInterfaceId": "eni-0e82524968c642828",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-31-33.ec2.internal",
+                    "PrivateIpAddress": "172.31.31.33",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-31-33.ec2.internal",
+                            "PrivateIpAddress": "172.31.31.33"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-0bd53e39fafc00dcb"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-0ad164d931f0ae75a"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 					ec2-54-236-252-236.compute-1.amazonaws.com: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 06:42:45  45 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> 9509a1e8aa1f
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> f5323790c069
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> 3a170655900d
+Successfully built 3a170655900d
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+f23f4301bf58: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+f23f4301bf58: Layer already exists
+5e90a8fa1cc9: Layer already exists
+28719f7d590d: Layer already exists
+7cc0623bd7a8: Layer already exists
+704d07eaecd4: Layer already exists
+f1859b30ca6b: Layer already exists
+6a35d52a66fd: Layer already exists
+fbd7d5451c69: Layer already exists
+4fc242d58285: Layer already exists
+ec2: digest: sha256:08769b09c15e42f150876168039229abc97a18e9294ed8089e5379c947488894 size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-07072eb62c18a0277"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-094ef4e39029891ee",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T22:42:55.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-17-98.ec2.internal",
+            "PrivateIpAddress": "172.31.17.98",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "31928dd2-39d0-4704-8f3d-0e699efcf949",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T22:42:55.000Z",
+                        "AttachmentId": "eni-attach-07b30a8f5c1d72d35",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-07072eb62c18a0277"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:07:4a:6f:74:0f",
+                    "NetworkInterfaceId": "eni-08620449f6abd7401",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-17-98.ec2.internal",
+                    "PrivateIpAddress": "172.31.17.98",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-17-98.ec2.internal",
+                            "PrivateIpAddress": "172.31.17.98"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-07072eb62c18a0277"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-0e07db15183884627"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 				ec2-3-80-117-191.compute-1.amazonaws.com: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 06:50:48  48 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> 9509a1e8aa1f
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> f5323790c069
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> 3a170655900d
+Successfully built 3a170655900d
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+f23f4301bf58: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+28719f7d590d: Layer already exists
+704d07eaecd4: Layer already exists
+7cc0623bd7a8: Layer already exists
+5e90a8fa1cc9: Layer already exists
+f23f4301bf58: Layer already exists
+6a35d52a66fd: Layer already exists
+f1859b30ca6b: Layer already exists
+fbd7d5451c69: Layer already exists
+4fc242d58285: Layer already exists
+ec2: digest: sha256:08769b09c15e42f150876168039229abc97a18e9294ed8089e5379c947488894 size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-01d198e09bb747c6f"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-04821b31081336c4b",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T22:50:57.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-20-39.ec2.internal",
+            "PrivateIpAddress": "172.31.20.39",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "ed4850ad-d329-41f6-8a82-a4c634d3233f",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T22:50:57.000Z",
+                        "AttachmentId": "eni-attach-04c6eee720f839963",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-01d198e09bb747c6f"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:ca:7c:5f:20:31",
+                    "NetworkInterfaceId": "eni-096dc18865d63273a",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-20-39.ec2.internal",
+                    "PrivateIpAddress": "172.31.20.39",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-20-39.ec2.internal",
+                            "PrivateIpAddress": "172.31.20.39"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-01d198e09bb747c6f"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-08e9967f324df42d6"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 				ec2-54-234-95-66.compute-1.amazonaws.com: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 07:00:17  17 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> 9509a1e8aa1f
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> f5323790c069
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> 3a170655900d
+Successfully built 3a170655900d
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+f23f4301bf58: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+704d07eaecd4: Layer already exists
+7cc0623bd7a8: Layer already exists
+28719f7d590d: Layer already exists
+f23f4301bf58: Layer already exists
+5e90a8fa1cc9: Layer already exists
+f1859b30ca6b: Layer already exists
+6a35d52a66fd: Layer already exists
+4fc242d58285: Layer already exists
+fbd7d5451c69: Layer already exists
+ec2: digest: sha256:08769b09c15e42f150876168039229abc97a18e9294ed8089e5379c947488894 size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-0d66f5bebd7ec4a3e"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-0b55d7118bfcb7bf7",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T23:00:28.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-28-31.ec2.internal",
+            "PrivateIpAddress": "172.31.28.31",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "e9186c90-b53b-4325-b7a7-3afff592fd08",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T23:00:28.000Z",
+                        "AttachmentId": "eni-attach-08502f4d8a7819307",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-0d66f5bebd7ec4a3e"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:66:a0:c1:73:97",
+                    "NetworkInterfaceId": "eni-0e4438542b46255df",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-28-31.ec2.internal",
+                    "PrivateIpAddress": "172.31.28.31",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-28-31.ec2.internal",
+                            "PrivateIpAddress": "172.31.28.31"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-0d66f5bebd7ec4a3e"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-0ee13f6285d26b072"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 			ec2-54-210-44-247.compute-1.amazonaws.com	: Name or service not known
+lost connection
+INFO: Started setup at 2022-04-29 07:14:01  01 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> 9509a1e8aa1f
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> f5323790c069
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> 3a170655900d
+Successfully built 3a170655900d
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+f23f4301bf58: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+28719f7d590d: Layer already exists
+7cc0623bd7a8: Layer already exists
+f23f4301bf58: Layer already exists
+704d07eaecd4: Layer already exists
+5e90a8fa1cc9: Layer already exists
+f1859b30ca6b: Layer already exists
+6a35d52a66fd: Layer already exists
+4fc242d58285: Layer already exists
+fbd7d5451c69: Layer already exists
+ec2: digest: sha256:08769b09c15e42f150876168039229abc97a18e9294ed8089e5379c947488894 size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-0a98b2be017b20e73"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-06067d47117f46b7f",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-04-29T23:14:13.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-16-152.ec2.internal",
+            "PrivateIpAddress": "172.31.16.152",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "57b952b1-4436-45da-b399-1adfae0c6d43",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-04-29T23:14:13.000Z",
+                        "AttachmentId": "eni-attach-08f901fa6451ce7e6",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-0a98b2be017b20e73"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:1d:a4:2a:2e:d7",
+                    "NetworkInterfaceId": "eni-042daf66982a075eb",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-16-152.ec2.internal",
+                    "PrivateIpAddress": "172.31.16.152",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-16-152.ec2.internal",
+                            "PrivateIpAddress": "172.31.16.152"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-0a98b2be017b20e73"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-069bdbf1435267a97"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+ssh: Could not resolve hostname 					ec2-52-87-217-96.compute-1.amazonaws.com: Name or service not known
+lost connection
+INFO: Started setup at 2022-05-01 12:34:23  23 EDT 
+
+INFO: Building Docker image and pushing to Docker Hub 
+
+Sending build context to Docker daemon  134.7kB
+Step 1/7 : FROM python:3.8-alpine
+ ---> f185fb08e43c
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 37b7eb23d67e
+Step 3/7 : COPY requirements.txt ./
+ ---> Using cache
+ ---> bc16c76dd71a
+Step 4/7 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 4a343b1b10a9
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> 9509a1e8aa1f
+Step 6/7 : EXPOSE 5000
+ ---> Using cache
+ ---> f5323790c069
+Step 7/7 : CMD ["python", "./index.py"]
+ ---> Using cache
+ ---> 3a170655900d
+Successfully built 3a170655900d
+Successfully tagged stefen2020/flask-app:ec2
+The push refers to repository [docker.io/stefen2020/flask-app]
+f23f4301bf58: Preparing
+28719f7d590d: Preparing
+704d07eaecd4: Preparing
+5e90a8fa1cc9: Preparing
+7cc0623bd7a8: Preparing
+f1859b30ca6b: Preparing
+6a35d52a66fd: Preparing
+fbd7d5451c69: Preparing
+4fc242d58285: Preparing
+f1859b30ca6b: Waiting
+6a35d52a66fd: Waiting
+fbd7d5451c69: Waiting
+4fc242d58285: Waiting
+704d07eaecd4: Layer already exists
+28719f7d590d: Layer already exists
+7cc0623bd7a8: Layer already exists
+5e90a8fa1cc9: Layer already exists
+f23f4301bf58: Layer already exists
+f1859b30ca6b: Layer already exists
+6a35d52a66fd: Layer already exists
+fbd7d5451c69: Layer already exists
+4fc242d58285: Layer already exists
+ec2: digest: sha256:08769b09c15e42f150876168039229abc97a18e9294ed8089e5379c947488894 size: 2203
+INFO: Attaching user policy AmazonEC2FullAccess to stefen 
+
+INFO: Creating a key pair with name docker-ec2 
+
+INFO: Creating security group docker-ec2-sg 
+
+{
+    "GroupId": "sg-0809322b957b24564"
+}
+INFO: Authorizing security group docker-ec2-sg for SSH access 
+
+INFO: Launching an instance of type t2.micro in security group docker-ec2-sg 
+
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0f9fc25dd2506cf6d",
+            "InstanceId": "i-097390eb7769ac2d0",
+            "InstanceType": "t2.micro",
+            "KeyName": "docker-ec2",
+            "LaunchTime": "2022-05-01T16:34:34.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-26-214.ec2.internal",
+            "PrivateIpAddress": "172.31.26.214",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-b222acff",
+            "VpcId": "vpc-19232963",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "369bce5b-a2c3-499c-b486-bc4e9cacaf9c",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2022-05-01T16:34:34.000Z",
+                        "AttachmentId": "eni-attach-0632db397ef9019df",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "docker-ec2-sg",
+                            "GroupId": "sg-0809322b957b24564"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:5e:b0:c6:6f:39",
+                    "NetworkInterfaceId": "eni-0e4ceabcf573f6d45",
+                    "OwnerId": "623894748731",
+                    "PrivateDnsName": "ip-172-31-26-214.ec2.internal",
+                    "PrivateIpAddress": "172.31.26.214",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-26-214.ec2.internal",
+                            "PrivateIpAddress": "172.31.26.214"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-b222acff",
+                    "VpcId": "vpc-19232963",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "docker-ec2-sg",
+                    "GroupId": "sg-0809322b957b24564"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "docker",
+                    "Value": "ec2"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "623894748731",
+    "ReservationId": "r-031a159943457023c"
+}
+INFO: Getting public IP address for EC2 instance 
+
+INFO: Waiting 30 seconds. Copying deployment script and accessing with SSH 
+
+Warning: Permanently added 'ec2-34-228-9-81.compute-1.amazonaws.com,34.228.9.81' (ECDSA) to the list of known hosts.
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+]0;ec2-user@ip-172-31-26-214:~[?1034h[ec2-user@ip-172-31-26-214 ~]$ ls
+[0m[01;32mdeploy.sh[0m
+]0;ec2-user@ip-172-31-26-214:~[ec2-user@ip-172-31-26-214 ~]$ bash deploy.sh
+Started deployment at 2022-05-01 04:36:49  49 UTC 
+
+INFO: Updating EC2, installing Docker and starting it up 
+
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+Redirecting to /bin/systemctl start docker.service
+ec2: Pulling from stefen2020/flask-app
+df9b9388f04a: Pulling fs layer
+a1ef3e6b7a02: Pulling fs layer
+6cb9c3e38f46: Pulling fs layer
+01f10cc3d53d: Pulling fs layer
+8722ec4741b6: Pulling fs layer
+797002eff99f: Pulling fs layer
+635f813c0194: Pulling fs layer
+525e2cdb93fa: Pulling fs layer
+dd08dfea6230: Pulling fs layer
+01f10cc3d53d: Waiting
+8722ec4741b6: Waiting
+797002eff99f: Waiting
+635f813c0194: Waiting
+525e2cdb93fa: Waiting
+dd08dfea6230: Waiting
+a1ef3e6b7a02: Verifying Checksum
+a1ef3e6b7a02: Download complete
+01f10cc3d53d: Verifying Checksum
+01f10cc3d53d: Download complete
+df9b9388f04a: Verifying Checksum
+df9b9388f04a: Download complete
+797002eff99f: Verifying Checksum
+797002eff99f: Download complete
+8722ec4741b6: Verifying Checksum
+8722ec4741b6: Download complete
+6cb9c3e38f46: Verifying Checksum
+6cb9c3e38f46: Download complete
+635f813c0194: Verifying Checksum
+635f813c0194: Download complete
+dd08dfea6230: Verifying Checksum
+dd08dfea6230: Download complete
+525e2cdb93fa: Verifying Checksum
+525e2cdb93fa: Download complete
+df9b9388f04a: Pull complete
+a1ef3e6b7a02: Pull complete
+6cb9c3e38f46: Pull complete
+01f10cc3d53d: Pull complete
+8722ec4741b6: Pull complete
+797002eff99f: Pull complete
+635f813c0194: Pull complete
+525e2cdb93fa: Pull complete
+dd08dfea6230: Pull complete
+Digest: sha256:08769b09c15e42f150876168039229abc97a18e9294ed8089e5379c947488894
+Status: Downloaded newer image for stefen2020/flask-app:ec2
+docker.io/stefen2020/flask-app:ec2
+288f2b92622904fa1873c26f7228ccd083919c2528fc91a6be77013202a1e88e
+INFO: Completed deployment within 32 seconds. Exiting... 
+
+]0;ec2-user@ip-172-31-26-214:~[ec2-user@ip-172-31-26-214 ~]$ [K[ec2-user@ip-172-31-26-214 ~]$ [K[ec2-user@ip-172-31-26-214 ~]$ clear
+[3J[H[2J]0;ec2-user@ip-172-31-26-214:~[ec2-user@ip-172-31-26-214 ~]$ ba[K[Kls
+[0m[01;32mdeploy.sh[0m  [01;34mlogs[0m
+]0;ec2-user@ip-172-31-26-214:~[ec2-user@ip-172-31-26-214 ~]$ exit
+déconnexion
+Connection to ec2-34-228-9-81.compute-1.amazonaws.com closed.
+INFO: Completed setup within 4766 seconds.
