@@ -1,7 +1,4 @@
 #!/bin/bash
-# Author: Ismail Dawoodjee
-# Bash script to automate setup for an EC2 instance using the AWS CLI commands.
-# Can add more variables and options as necessary for the commands.
 
 set -euo pipefail
 
